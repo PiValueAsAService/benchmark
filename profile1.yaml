@@ -1,10 +1,13 @@
 config:
   target: http://172.17.0.2:1337
   phases:
-    - duration: 30
+    - duration: 10
       arrivalRate: 1
       name: Warm up phase
+    - duration: 50
+      arrivalRate: 3
+      name: Spike phase
 scenarios:
   - flow:
       - get:
-          url: "/api/v1/pi?size=60000"
+          url: "/api/v1/pi?size=40000"
