@@ -1,0 +1,15 @@
+{
+  "name": "pivaas-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/artillery run"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "artillery": "2.0.1"
+  }
+}
